@@ -38,14 +38,52 @@ Borrow out = A'Bin + A'B + BBin
 
 **Truthtable**
 
+FULL ADDER
+
+<img width="259" height="195" alt="image" src="https://github.com/user-attachments/assets/2ccc1525-f587-4f50-bd47-69efb92bdce5" />
+
+
+FULL SUBTRACTOR
+
+<img width="433" height="337" alt="image" src="https://github.com/user-attachments/assets/73e7b539-74d0-42ba-9048-29c10eb154e8" />
+
+
+
+
 **Procedure**
 
-Write the detailed procedure here
+1.Create a new Quartus project and add Verilog files for Full Adder and Full Subtractor.
+2.Write and save the Verilog code defining inputs and outputs.
+3.Compile the design to check for errors.
+4.Create a simulation waveform (.vwf), add signals using Node Finder, and apply all input combinations.
+5.Run functional simulation and verify the outputs with the truth table.
 
 **Program:**
 
-/* Program to design a half subtractor and full subtractor circuit and verify its truth table in quartus using Verilog programming. Developed by: RegisterNumber:
-*/
+Program to design a half subtractor and full subtractor circuit and verify its truth table in quartus using Verilog programming. Developed by: RegisterNumber: 25018756
+
+FULL ADDER
+```
+module fulladder(a,b,cin,sum,carry);
+input a,b,cin;
+output sum,carry;
+assign sum=((a ^ b)^cin);
+assign carry= ( (a & b)| ( cin & a)| (cin & b));
+endmodule
+```
+
+FULL SUBTRACTOR
+```
+module fullsub(a,b,bin,difference,borrow);
+input a,b,bin;
+output difference,borrow;
+assign difference= ((a ^ b)^bin);
+assign borrow= (( ~a & b)|(~a & bin)|(b & bin));
+endmodule
+```
+
+
+
 
 **RTL Schematic**
 
