@@ -40,7 +40,10 @@ Borrow out = A'Bin + A'B + BBin
 
 FULL ADDER
 
-<img width="259" height="195" alt="image" src="https://github.com/user-attachments/assets/2ccc1525-f587-4f50-bd47-69efb92bdce5" />
+
+
+<img width="242" height="208" alt="image" src="https://github.com/user-attachments/assets/7b46ae2c-052c-4d1a-ada6-5d4867c55979" />
+
 
 
 FULL SUBTRACTOR
@@ -53,14 +56,19 @@ FULL SUBTRACTOR
 **Procedure**
 
 1.Create a new Quartus project and add Verilog files for Full Adder and Full Subtractor.
+
 2.Write and save the Verilog code defining inputs and outputs.
+
 3.Compile the design to check for errors.
+
 4.Create a simulation waveform (.vwf), add signals using Node Finder, and apply all input combinations.
+
 5.Run functional simulation and verify the outputs with the truth table.
 
 **Program:**
 
-Program to design a half subtractor and full subtractor circuit and verify its truth table in quartus using Verilog programming. Developed by: RegisterNumber: 25018756
+Program to design a half subtractor and full subtractor circuit and verify its truth table in quartus using Verilog programming. 
+Developed by: RegisterNumber: 25018756
 
 FULL ADDER
 ```
@@ -87,7 +95,36 @@ endmodule
 
 **RTL Schematic**
 
+FULL ADDER
+
+
+
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/0766cab3-688e-464a-add1-21c801644018" />
+
+FULL SUBTRACTOR
+
+
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/f728799b-a961-4086-91c5-92ca5f44f8be" />
+
+
+
 **Output Timing Waveform**
+
+*FULL ADDER*
+
+
+
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/0336ff3a-0e3a-4cd1-8936-6f7d8da94309" />
+
+
+
+
+*FULL SUBTRACTOR*
+
+
+
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/370e00af-e776-4c2b-ac0d-06ec8de690e5" />
+
 
 **Result:**
 
